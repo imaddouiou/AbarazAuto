@@ -1,0 +1,119 @@
+
+
+/* === RÉINITIALISATION DE BASE === */
+body {
+  margin: 0; /* Enlève la marge par défaut du body */
+  font-family: Arial, sans-serif; /* Police propre et lisible */
+}
+
+/* === BARRE DE NAVIGATION PRINCIPALE ===git add .
+ */
+.navbar {
+  background-color: #141312; /* Couleur jaune foncé (orange) */
+  color: white; /* Texte en blanc */
+  display: flex; /* Utilisation de flexbox pour organiser les éléments */
+  justify-content: space-between; /* Espace entre la gauche (logo) et la droite (liens) */
+  align-items: center; /* Centrer verticalement les éléments */
+  padding: 15px 30px; /* Espacement intérieur */
+  position: fixed; /* Fixer la barre en haut même en scrollant */
+  top: 0; /* Collée en haut */
+  width: 100%; /* Prend toute la largeur */
+  z-index: 100; /* S'assure qu'elle est au-dessus des autres éléments */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet de profondeur */
+}
+
+/* === LOGO === */
+.logo {
+  font-size: 24px; /* Taille du texte du logo */
+  font-weight: bold; /* En gras */
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlève le soulignement du lien */
+}
+
+/* === LISTE DES LIENS DE NAVIGATION === */
+.nav-links ul {
+  list-style: none; /* Supprime les puces */
+  display: flex; /* Affichage en ligne des éléments */
+  margin: 0;
+  padding: 0;
+}
+
+/* === CHAQUE ÉLÉMENT DE LA LISTE === */
+.nav-links ul li {
+  margin-left: 20px; /* Espace entre les liens */
+}
+
+/* === LIENS TEXTUELS === */
+.nav-links ul li a {
+  text-decoration: none; /* Pas de soulignement */
+  color: white; /* Couleur du lien */
+  font-weight: bold; /* Texte en gras */
+  transition: color 0.3s; /* Animation douce quand on survole */
+}
+
+/* === SURVOL DES LIENS TEXTUELS === */
+.nav-links ul li a:hover {
+  color: #2c3e50; /* Gris foncé au survol */
+}
+
+/* === ICONES DES RÉSEAUX SOCIAUX === */
+.nav-links ul li img {
+  vertical-align: middle; /* Aligne l’icône avec le texte */
+  transition: transform 0.3s; /* Animation douce quand on survole */
+}
+
+/* === SURVOL DES ICONES === */
+.nav-links ul li img:hover {
+  transform: scale(1.2); /* Agrandit légèrement l’icône au survol */
+}
+
+/* === BOUTON DU MENU HAMBURGER POUR MOBILE === */
+.menu-icon {
+  display: none; /* Caché par défaut (visible seulement en mobile) */
+  font-size: 26px; /* Taille du symbole ☰ */
+  background: none; /* Pas de fond */
+  border: none; /* Pas de bordure */
+  color: white; /* Couleur blanche */
+  cursor: pointer; /* Curseur en forme de main */
+}
+
+/* === RESPONSIVE POUR LES PETITS ÉCRANS === */
+@media (max-width: 768px) {
+  /* Cache les liens de navigation en mobile */
+  .nav-links {
+    display: none; /* Caché jusqu’à ce qu’on clique sur ☰ */
+    width: 100%; /* Prend toute la largeur */
+    background-color: #F39C12; /* Même couleur que la navbar */
+    position: absolute; /* Pour placer sous la navbar */
+    top: 60px; /* Sous la barre (hauteur approximative de la navbar) */
+    left: 0;
+  }
+
+  /* Colonne verticale pour les liens */
+  .nav-links ul {
+    flex-direction: column; /* Affiche les éléments verticalement */
+    align-items: center; /* Centré horizontalement */
+  }
+
+  .nav-links ul li {
+    margin: 15px 0; /* Espacement vertical entre les éléments */
+  }
+
+  .menu-icon {
+    display: block; /* Affiche le bouton ☰ en mode mobile */
+  }
+
+  /* Active les liens quand on clique sur ☰ */
+  .nav-links.active {
+    display: block; /* Affiche les liens */
+  }
+}
+
+.body {
+  background-image: url("img1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
