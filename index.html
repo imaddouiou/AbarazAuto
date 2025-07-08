@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="bar.css"> -->
+</head>
+<body>
+        <nav class="navbar">
+                    <a href="index.html" class="logo">Abaraz Auto</a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a class="visible" href="index.html"><b>Accueil</b></a></li>
+                        <li><a href="menu.html"><b>Menu</b></a></li>
+                        <li><a href="about.html"><b>About</b></a></li>
+                        
+                        <li><a href="contact.html"><b>Contact</b></a></li>
+                    
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="facebook.svg" alt="Facebook" width="25px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="instagram.png" alt="Instagram" width="25px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.X.com" target="_blank">
+                                <img src="twitter.png" alt="X" width="25px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="menu-icon">☰</button>
+                
+            </nav>
+            <div>
+            </div>
+            <script>
+            // On récupère les éléments : bouton menu et bloc de liens
+            const menuIcon = document.querySelector(".menu-icon");
+            const navLinks = document.querySelector(".nav-links");
+
+            // Quand on clique sur ☰, on ajoute/enlève la classe 'active'
+            menuIcon.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+            </script>
+            <div class="page1">
+                <div class="page1-text">Car Rental</div>
+                <a href="https://wa.me/212621299173" target="_blank" class="whatsapp-button">
+                    Contacter sur WhatsApp
+                </a>
+
+
+            </div>
+
+
+
+
+</body>
+</html>

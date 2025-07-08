@@ -69,7 +69,8 @@ body {
 
 /* === BOUTON DU MENU HAMBURGER POUR MOBILE === */
 .menu-icon {
-  display: none; /* Caché par défaut (visible seulement en mobile) */
+  display: none;
+    /* Caché par défaut (visible seulement en mobile) */
   font-size: 26px; /* Taille du symbole ☰ */
   background: none; /* Pas de fond */
   border: none; /* Pas de bordure */
@@ -78,7 +79,7 @@ body {
 }
 
 /* === RESPONSIVE POUR LES PETITS ÉCRANS === */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   /* Cache les liens de navigation en mobile */
   .nav-links {
     display: none; /* Caché jusqu’à ce qu’on clique sur ☰ */
@@ -100,7 +101,8 @@ body {
   }
 
   .menu-icon {
-    display: block; /* Affiche le bouton ☰ en mode mobile */
+      display:block
+       /* Affiche le bouton ☰ en mode mobile */
   }
 
   /* Active les liens quand on clique sur ☰ */
