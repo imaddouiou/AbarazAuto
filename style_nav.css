@@ -148,6 +148,11 @@ a {
     background-color: var(--black-color);
     padding-top: 1rem;
   }
+  .page1 {
+    font-size: 5px;
+  }
+  .whatsapp-button {
+  }
 }
 
 .nav__link {
